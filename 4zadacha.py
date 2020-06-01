@@ -45,6 +45,7 @@ with open("zxc.txt") as f:
         print("p=",p-1)
     else:
         print("b=",b)
+f.close()
                     
         
         
