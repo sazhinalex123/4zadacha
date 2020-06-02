@@ -32,7 +32,7 @@ with open("zxc.txt") as f:
                     k=k+1
                     a=i
                 elif a!=' ':
-                    if a>i:
+                    if a>=i:
                         b=b+1
                         a=i
                     else:
@@ -44,7 +44,7 @@ with open("zxc.txt") as f:
         print("b=",b)
     else:
         print("b=",b)
-f.close
+f.close()
                     
         
         
