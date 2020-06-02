@@ -27,25 +27,24 @@ with open("zxc.txt") as f:
         l=len(t)
         print("t=",t)
         for i in t.split(' '):
-            if k==0:
-                a=i
-                k=k+1
-            else:
-                print("i=",i)
-                print("a=",a)
-                if a>i:
-                    b=b+1
-                    print("b=",b)
+            if i!='  ':
+                if k==0:
+                    k=k+1
                     a=i
-                else:
-                    p=b
-                    b=1
-                    a=i
+                elif a!=' ':
+                    if a>i:
+                        b=b+1
+                        a=i
+                    else:
+                        p=b
+                        b=1
+                        a=i
     if b==1:
-        print("p=",p-1)
+        b=p
+        print("b=",b)
     else:
         print("b=",b)
-f.close()
+f.close
                     
         
         
